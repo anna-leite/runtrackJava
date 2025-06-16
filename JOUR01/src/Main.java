@@ -5,6 +5,7 @@ public class Main {
 //        Job0.Variables();
 //        Job1.Print();
 //        Job2.PrintHelloName();
-        Job3.Array();
+//        Job3.Array();
+        Job4.printSquare();
     }
 }
