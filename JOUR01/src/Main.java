@@ -3,6 +3,7 @@
 public class Main {
     public static void main(String[] args) {
 //        Job0.Variables();
-        Job1.Print();
+//        Job1.Print();
+        Job2.PrintHelloName();
     }
 }
