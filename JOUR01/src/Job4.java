@@ -15,7 +15,7 @@ public class Job4 {
                 inputValid = true;
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input.");
-                sc.next();
+                sc.nextLine();
             } finally {
                 if (inputValid) {
                     sc.close(); // Close the scanner
