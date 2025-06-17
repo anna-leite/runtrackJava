@@ -1,4 +1,4 @@
-
+package JOUR01;
 
 public class Job0 {
     public static void Variables() {

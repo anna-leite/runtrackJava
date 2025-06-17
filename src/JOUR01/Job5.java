@@ -1,3 +1,5 @@
+package JOUR01;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Locale;

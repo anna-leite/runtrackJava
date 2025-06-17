@@ -1,3 +1,5 @@
+package JOUR01;
+
 import java.util.Scanner;
 
 public class Job2 {
