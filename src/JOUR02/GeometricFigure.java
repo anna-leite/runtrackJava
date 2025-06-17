@@ -1,7 +1,18 @@
 package JOUR02;
 
+
 public abstract class GeometricFigure {
+    private final Center center;
+
+    public GeometricFigure(double x, double y) {
+        this.center = new Center(x, y);
+    }
+
     public abstract double area();
+
+    public Center getCenter() {
+        return this.center;
+    }
 }
 
 
@@ -44,13 +55,11 @@ class Center {
 class Rectangle extends GeometricFigure {
     private double length;
     private double width;
-    private final Center center;
 
     public Rectangle(double lenght, double width, double x, double y) {
-        super();
+        super(x, y);
         this.length = lenght;
         this.width = width;
-        this.center = new Center(x, y);
     }
 
     public double getLength() {
@@ -96,11 +105,9 @@ class RectangleColor extends Rectangle {
 
 class Circle extends GeometricFigure {
     private double radius;
-    private final Center center;
 
     public Circle(double x, double y, double radius) {
-        super();
-        this.center = new Center(x, y);
+        super(x, y);
         this.radius = radius;
     }
 
@@ -118,7 +125,7 @@ class Circle extends GeometricFigure {
     }
 
     public boolean isInside(double x, double y) {
-        return (Math.pow(x - center.getX(), 2) + Math.pow(y - center.getY(), 2) <= Math.pow(getRadius(), 2));
+        return (Math.pow(x - this.getCenter().getX(), 2) + Math.pow(y - this.getCenter().getY(), 2) <= Math.pow(getRadius(), 2));
     }
 }
 
