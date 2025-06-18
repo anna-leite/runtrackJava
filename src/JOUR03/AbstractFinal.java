@@ -1,4 +1,4 @@
-package JOUR03;
+/*package JOUR03;
 
 public class AbstractFinal {
     public static void main(String[] args) {
@@ -31,4 +31,4 @@ abstract class D extends A {
     }
 
     abstract int calcul(int b) {} // abstract methode cannot have a body
-}
+}*/

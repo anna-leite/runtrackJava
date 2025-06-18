@@ -1,4 +1,4 @@
-package JOUR02;
+/*package JOUR03;
 
 class A {
     public A() {}
@@ -92,5 +92,5 @@ public class ABCDEF {
 
         System.out.println("Sum of d : " + dSum);
     }
-}
+}*/
 
