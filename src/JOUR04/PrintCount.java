@@ -21,43 +21,22 @@ public class PrintCount {
         this.maxCount = sc.nextInt();
     }
 
-    public void printCount() {
+    public void calculateTotalCount() {
+        int totalCount = 0;
         for (int i = 1; i <=  maxCount; i++) {
-            System.out.println(i);
+            totalCount += i;
         }
-    }
-}
-
-class CountThread extends Thread {
-    private final PrintCount pc;
-
-    public CountThread(PrintCount pc) {
-        this.pc = pc;
+        System.out.println("The total count is : " + totalCount);
     }
 
-    @Override
-    public void run() {
-        pc.printCount();
-    }
-}
-
-class CountMain {
     public static void main(String[] args) {
         PrintCount pc = new PrintCount();
         pc.askMaxCount();
-
         long start = System.nanoTime();
-        CountThread ct = new CountThread(pc);
-        ct.start();
-
-        try {
-            ct.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
+        pc.calculateTotalCount();
         long end = System.nanoTime();
         long duration = end - start;
         System.out.println("Duration : " + duration + " nanoseconds");
     }
 }
+
