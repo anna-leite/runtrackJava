@@ -110,5 +110,3 @@ class Main {
         System.out.println("Duration : " + duration + " nanoseconds");
     }
 }
-
-// faut que je change de place long end!!! sinon il ne mesure rien!!!
